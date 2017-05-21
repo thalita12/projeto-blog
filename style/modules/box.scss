@@ -18,11 +18,11 @@
       height: 320px;
       margin: 20px 0;
       padding: 10px;
-      background-color: lighten($primary-color, 50%);
+      background-color: #FF5722;
     }
 
     &-imagem {
-      border: 1px solid $secondary-color;
+      border: 1px solid #69D2E7;
       width: 100px;
       height: 100px;
       margin: auto;
@@ -72,7 +72,7 @@
 
   &__info-texto {
     margin: 15px 0;
-    color: $secondary-color;
+    color: #fff;
     font-weight: 500;
   }
 }
