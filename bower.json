@@ -1,0 +1,28 @@
+{
+  "name": "projeto-blog",
+  "description": "Aplicação que serve como tema de um blog para resenhas de livros.",
+  "main": "index.js",
+  "authors": [
+    "Thalita Oliveira"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "blog",
+    "thalita",
+    "resenhas_livros"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components/bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "projeto-blog",
+  "version": "1.0.0",
+  "description": "Aplicação que serve como tema de um blog para resenhas de livros.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog",
+    "thalita",
+    "resenhas_livros"
+  ],
+  "author": "Thalita Oliveira",
+  "license": "ISC",
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-cli": "0.1.6",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "sass": "^0.5.0"
+  }
+}
