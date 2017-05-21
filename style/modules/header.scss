@@ -1,0 +1,29 @@
+//**********************//
+// Menu
+//**********************//
+
+.menu-topo {
+  border-radius: 0;
+  border: 0;
+  background-color: $primary-color;
+  background-image: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,.26);
+
+  &__item {
+    color: #fff !important;
+  }
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .active > a {
+  background-color: darken($secondary-color, 10%);
+  background-image: none;
+
+  &:hover {
+    background-color: $secondary-color;
+    background-image: none;
+  }
+}
+
+.btn-white .icon-bar {
+  background-color: #fff !important;
+}

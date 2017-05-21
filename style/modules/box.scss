@@ -1,0 +1,82 @@
+//**********************//
+// Contaier das imagens
+//**********************//
+
+.box {
+  display: flex;
+
+  &__conteudo {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__info {
+    width: 20%;
+
+    &-detalhe{
+      height: 320px;
+      margin: 20px 0;
+      padding: 10px;
+      background-color: lighten($primary-color, 50%);
+    }
+
+    &-imagem {
+      border: 1px solid $secondary-color;
+      width: 100px;
+      height: 100px;
+      margin: auto;
+    }
+  }
+
+  &__card {
+    width: 220px;
+    height: 250px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primary-color;
+      color: #fff;
+      padding: 20px;
+    }
+
+    &:hover img {
+      display: none;
+    }
+
+    &:hover .texto {
+      display: block;
+    }
+
+    &:hover button {
+      float: right;
+      display: inline-block;
+    }
+
+    & button {
+      display: none;
+    }
+  }
+
+  &__titulo, &__sub-titulo, &__texto {
+    display: block;
+  }
+
+  &__titulo {
+    font-size: 1em;
+  }
+
+  &__sub-titulo, &__texto, &__info-texto {
+    font-size: 0.8571428571428571em;
+  }
+
+  &__info-texto {
+    margin: 15px 0;
+    color: $secondary-color;
+    font-weight: 500;
+  }
+}
+
+.texto {
+  display: none;
+}
