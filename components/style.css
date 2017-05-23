@@ -4767,14 +4767,15 @@ html {
   .box__conteudo {
     width: 80%;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    flex-wrap: wrap; }
   .box__info {
     width: 20%; }
     .box__info-detalhe {
       height: 320px;
-      margin: 20px 0;
+      margin: 0;
       padding: 10px;
-      background-color: #81D4FA; }
+      background-color: #e3f5fe; }
     .box__info-imagem {
       border: 1px solid #212121;
       width: 100px;
@@ -4783,7 +4784,8 @@ html {
   .box__card {
     width: 220px;
     height: 250px;
-    cursor: pointer; }
+    cursor: pointer;
+    margin: 0 10px 40px; }
     .box__card:hover {
       background-color: #ee3900;
       color: #fff;
@@ -4811,6 +4813,19 @@ html {
 .texto {
   display: none; }
 
+/*
+@media (max-width: 945px) {
+  .box {
+    &__conteudo, &__card {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &__card {
+      margin: 0 10px 40px;
+    }
+  }
+}*/
 .btn-flat {
   display: inline-block;
   position: relative;

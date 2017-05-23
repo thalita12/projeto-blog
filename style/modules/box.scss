@@ -9,16 +9,17 @@
     width: 80%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   &__info {
     width: 20%;
 
-    &-detalhe{
+    &-detalhe {
       height: 320px;
-      margin: 20px 0;
+      margin: 0;
       padding: 10px;
-      background-color: #81D4FA;
+      background-color: lighten(#81D4FA, 20%);
     }
 
     &-imagem {
@@ -33,6 +34,7 @@
     width: 220px;
     height: 250px;
     cursor: pointer;
+    margin: 0 10px 40px;
 
     &:hover {
       background-color: $primary-color;
@@ -80,3 +82,21 @@
 .texto {
   display: none;
 }
+
+//*******************//
+// Media queries
+//*******************//
+
+/*
+@media (max-width: 945px) {
+  .box {
+    &__conteudo, &__card {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &__card {
+      margin: 0 10px 40px;
+    }
+  }
+}*/
