@@ -10,16 +10,18 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    order: 1;
   }
 
   &__info {
     width: 20%;
+    order: 2;
 
     &-detalhe {
-      height: 320px;
+      height: 250px;
       margin: 0;
       padding: 10px;
-      background-color: lighten(#81D4FA, 20%);
+      background-color: #81d4fa; // lighten(#81d4fa, 20%)
     }
 
     &-imagem {
@@ -37,7 +39,7 @@
     margin: 0 10px 40px;
 
     &:hover {
-      background-color: $primary-color;
+      background-color: $secondary-color;
       color: #fff;
       padding: 20px;
     }
@@ -87,16 +89,16 @@
 // Media queries
 //*******************//
 
-/*
-@media (max-width: 945px) {
+
+@media (max-width: 850px) {
   .box {
-    &__conteudo, &__card {
-      display: inline-block;
-      vertical-align: top;
+    &__conteudo {
+     order: 2;
     }
 
-    &__card {
-      margin: 0 10px 40px;
+    &__info {
+      order: 1;
+      min-width: 200px;
     }
   }
-}*/
+}
