@@ -39,16 +39,57 @@
 
 <div class="container-fluid box">
     <section class="box__conteudo">
-        <a href="index.html">Voltar</a>
+        <button class="btn-voltar" href="index.html">Voltar</button>
 
-        <div>
-            <img src="img3.jpg" width="220" height="250" alt="Imagem do livro Extraordinário">
-            <span class="text-left">Título do livro</span>
-            <span class="text-left">Autor</span>
-            <span>Páginas</span>
-            <span>Editora</span>
+        <div class="area-resenha">
+            <img style="float: left;margin: auto 15px 10px auto;" src="img3.jpg" width="220" height="250"
+                 alt="Imagem do livro Extraordinário">
 
-            <span>Resenha</span>
+            <div class="texto-menor">
+                <span class="text-left">Título do livro: <strong>O Escandâlo da Estação</strong></span>
+                <span class="text-left">Autor: <strong>Sophie Gee</strong></span>
+                <span class="text-left">Páginas: 400</span>
+                <span class="text-left">Editora: Novo Século</span>
+            </div>
+
+            <p class="texto-maior">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque mauris est, et faucibus
+                elit feugiat dictum. Nam a ullamcorper nulla, eu tincidunt lectus. Sed varius vel ex at ultrices.
+                Aliquam ut elit bibendum, dignissim sem in, auctor dolor. Donec congue, ligula mollis gravida lobortis,
+                ante nunc convallis orci, nec viverra nulla risus eget orci. Nulla nec erat egestas, molestie diam eu,
+                ultricies massa. In in ante dapibus, malesuada ipsum a, mattis magna. Aliquam arcu justo, vestibulum
+                ullamcorper est sit amet, ullamcorper vehicula augue. Curabitur in orci magna. Duis facilisis faucibus
+                porttitor. In blandit massa purus, et laoreet odio facilisis et. Duis volutpat, nibh dignissim convallis
+                ornare, augue tellus posuere turpis, vel cursus felis est ac turpis. Cras euismod scelerisque sem, eget
+                condimentum dolor vehicula at. Fusce vel mauris blandit, mattis libero a, blandit quam. Nulla facilisis,
+                tellus eget consequat fermentum, turpis metus viverra nibh, ac condimentum magna diam nec ligula.
+            </p>
+
+            <p class="texto-maior">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque mauris est, et faucibus
+                elit feugiat dictum. Nam a ullamcorper nulla, eu tincidunt lectus. Sed varius vel ex at ultrices.
+                Aliquam ut elit bibendum, dignissim sem in, auctor dolor. Donec congue, ligula mollis gravida lobortis,
+                ante nunc convallis orci, nec viverra nulla risus eget orci. Nulla nec erat egestas, molestie diam eu,
+                ultricies massa. In in ante dapibus, malesuada ipsum a, mattis magna. Aliquam arcu justo, vestibulum
+                ullamcorper est sit amet, ullamcorper vehicula augue. Curabitur in orci magna. Duis facilisis faucibus
+                porttitor. In blandit massa purus, et laoreet odio facilisis et. Duis volutpat, nibh dignissim convallis
+                ornare, augue tellus posuere turpis, vel cursus felis est ac turpis. Cras euismod scelerisque sem, eget
+                condimentum dolor vehicula at. Fusce vel mauris blandit, mattis libero a, blandit quam. Nulla facilisis,
+                tellus eget consequat fermentum, turpis metus viverra nibh, ac condimentum magna diam nec ligula.
+            </p>
+
+            <p class="texto-maior">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque mauris est, et faucibus
+                elit feugiat dictum. Nam a ullamcorper nulla, eu tincidunt lectus. Sed varius vel ex at ultrices.
+                Aliquam ut elit bibendum, dignissim sem in, auctor dolor. Donec congue, ligula mollis gravida lobortis,
+                ante nunc convallis orci, nec viverra nulla risus eget orci. Nulla nec erat egestas, molestie diam eu,
+                ultricies massa. In in ante dapibus, malesuada ipsum a, mattis magna. Aliquam arcu justo, vestibulum
+                ullamcorper est sit amet, ullamcorper vehicula augue. Curabitur in orci magna. Duis facilisis faucibus
+                porttitor. In blandit massa purus, et laoreet odio facilisis et. Duis volutpat, nibh dignissim convallis
+                ornare, augue tellus posuere turpis, vel cursus felis est ac turpis. Cras euismod scelerisque sem, eget
+                condimentum dolor vehicula at. Fusce vel mauris blandit, mattis libero a, blandit quam. Nulla facilisis,
+                tellus eget consequat fermentum, turpis metus viverra nibh, ac condimentum magna diam nec ligula.
+            </p>
         </div>
     </section>
 
@@ -62,11 +103,30 @@
             </div>
         </div>
     </section>
+
+    <a href="#top" class="glyphicon glyphicon-chevron-up"></a>
 </div>
 
 <footer class="rodape">
     2017 Todos os direitos reservados - Desenvolvido por Thalita.
 </footer>
+
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('a[href="#top"]').fadeIn();
+            } else {
+                $('a[href="#top"]').fadeOut();
+            }
+        });
+
+        $('a[href="#top"]').click(function(){
+            $('html, body').animate({scrollTop : 0},800);
+            return false;
+        });
+    });
+</script>
 
 </body>
 </html>
